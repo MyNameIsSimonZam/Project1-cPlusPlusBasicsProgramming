@@ -1,15 +1,24 @@
 ﻿#include <iostream>
-
-//Задание 1. Оказывается, не все люди умеют вычислять квадрат чисел.
-//А ведь это просто необходимо! 
-// Буквально каждый день, а то и не один раз, нам нужно 
-//вычислить квадрат какого - нибудь числа.
+void task1();
+void task2();
 
 int main() {
-	int a;
-	std::cout << "Give me the number: ";
-	std::cin >> a;
-	std::cout << "Square of a number is: " << a*a <<"\n";
+    int choice;
+    std::cout << "Choose a task to run:\n";
+    std::cout << "1. Task 1\n";
+    std::cout << "2. Task 2\n";
+    std::cout << "Enter your choice: ";
+    std::cin >> choice;
 
-	return 0;
+    switch (choice) {
+    case 1:
+        task1();
+        break;
+    case 2:
+        task2();
+        break;
+    default:
+        std::cout << "Invalid choice. Exiting...\n";
+    }
+    return 0;
 }
