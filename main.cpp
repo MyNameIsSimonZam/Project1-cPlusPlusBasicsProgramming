@@ -1,7 +1,15 @@
-#include <iostream>
-using namespace std;
+﻿#include <iostream>
+
+//Задание 1. Оказывается, не все люди умеют вычислять квадрат чисел.
+//А ведь это просто необходимо! 
+// Буквально каждый день, а то и не один раз, нам нужно 
+//вычислить квадрат какого - нибудь числа.
 
 int main() {
-    cout << "Hello, World!" << endl;
-    return 0;
+	int a;
+	std::cout << "Give me the number: ";
+	std::cin >> a;
+	std::cout << "Square of a number is: " << a*a <<"\n";
+
+	return 0;
 }
