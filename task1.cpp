@@ -7,7 +7,7 @@
 
 void task1() {
 	int a;
-	std::cout << "Give me the number: ";
+	std::cout << "Give me the number for squaring a number: ";
 	std::cin >> a;
 	std::cout << "Square of a number is: " << a * a << "\n";
 }
