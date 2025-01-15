@@ -4,6 +4,7 @@ void task1();
 void task2();
 void task3();
 void task4();
+void practicalWork1();
 
 int main() {
     int choice;
@@ -12,6 +13,11 @@ int main() {
     std::cout << "2. Task 2\n";
     std::cout << "3. Task 3\n";
     std::cout << "4. Task 4\n";
+    std::cout << "Or choose the number of the practical work to run:\n";
+    std::cout << "5. practical work 1\n";
+    std::cout << "6. practical work 2\n";
+    std::cout << "7. practical work 3\n";
+    std::cout << "8. practical work 4\n";
     std::cout << "Enter your choice: ";
     std::cin >> choice;
 
@@ -27,6 +33,9 @@ int main() {
         break;
     case 4:
         task4();
+        break;
+    case 5:
+        practicalWork1();
         break;
     default:
         std::cout << "Invalid choice. Exiting...\n";
